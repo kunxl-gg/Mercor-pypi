@@ -1,14 +1,6 @@
 import setuptools
 import re
 
-# Extract the version from the init file.
-VERSIONFILE="relevantpackage/__init__.py"
-getversion = re.search( r"^__version__ = ['\"]([^'\"]*)['\"]", open(VERSIONFILE, "rt").read(), re.M)
-if getversion:
-    new_version = getversion.group(1)
-else:
-    raise RuntimeError("Unable to find version string in %s." % (VERSIONFILE,))
-
 # Configurations
 with open("README.md", "r") as fh:
     long_description = fh.read()
