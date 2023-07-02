@@ -1,5 +1,5 @@
 import sys
-from ourlib import Model
+from ourlib import ourlib
 
 # def main():
 #     server_url = "http://your-server-url"
@@ -18,7 +18,7 @@ def main(args):
 
     # Upload files to the server
     # server_url = "http://your-server-url"
-    Model.upload_files_to_server()
+    ourlib.Model.upload_files_to_server()
 
      # Import and execute the user-defined inference script as if it were run with `python inference.py`
     sys.path.insert(0, "")
