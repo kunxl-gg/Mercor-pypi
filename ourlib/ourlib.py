@@ -28,7 +28,5 @@ class Model():
         if response.status_code == 200:
             print("Deployed successfully!")
         else:
-            print("Failed to deploy!") 
-
-Model.deploy()
+            print("Failed to deploy!")
 
