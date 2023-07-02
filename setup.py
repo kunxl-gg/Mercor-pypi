@@ -6,9 +6,9 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
      install_requires=['torch','numpy','pandas','scikit-learn'],        # Dependencies
-     python_requires='>=3.8',                                   # Minimum Python version
-     name='ourlib',                                             # Package name
-     version="0.0.1",                                     # Version
+     python_requires='>=3.8',                                           # Minimum Python version
+     name='ourlib',                                                     # Package name
+     version="0.0.2",                                                      # Version
      author="PT",                                     # Author name
      author_email="name@gmail.com",                           # Author mail
      description="Python package for ourlib.",    # Short package description
@@ -23,4 +23,9 @@ setuptools.setup(
          "License :: OSI Approved :: MIT License",
          "Operating System :: OS Independent",
      ],
+     entry_points={
+      'console_scripts': [
+         'ourlib=ourlib.command_line:main',
+      ],
+   },
  )
