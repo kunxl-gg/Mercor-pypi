@@ -23,3 +23,10 @@ class Model():
                 else:
                     print("Failed to upload files!")
 
+    async def deploy():
+        response = await requests.get("http://localhost:8080/deploy")
+        if response.status_code == 200:
+            print("Deployed successfully!")
+        else:
+            print("Failed to deploy!")
+
