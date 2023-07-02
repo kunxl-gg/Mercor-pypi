@@ -8,7 +8,7 @@ setuptools.setup(
      install_requires=['torch','numpy','pandas','scikit-learn'],        # Dependencies
      python_requires='>=3.8',                                           # Minimum Python version
      name='ourlib',                                                     # Package name
-     version="0.2.0",                                                      # Version
+     version="0.2.2",                                                      # Version
      author="PT",                                     # Author name
      author_email="name@gmail.com",                           # Author mail
      description="Python package for ourlib.",    # Short package description
