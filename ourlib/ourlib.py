@@ -16,10 +16,10 @@ class Model():
         for file_name in os.listdir(current_directory):
             file_path = os.path.join(current_directory, file_name)
             if os.path.isfile(file_path):
-                files.append((file_name, open(file_path, 'rb')))
-        
-        response = requests.post(SERVER_URL, files=files)
-        if response.status_code == 200:
-            print("Files uploaded successfully!")
-        else:
-            print("Failed to upload files!")
+                files = {'file': open(file_path, 'rb')}
+                response = requests.post(SERVER_URL, files=files)
+                if response.status_code == 200:
+                    print("Files uploaded successfully!")
+                else:
+                    print("Failed to upload files!")
+
